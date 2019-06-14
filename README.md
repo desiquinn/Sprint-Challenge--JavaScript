@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+* * * The biggest difference between '.forEach' and '.map' is that '.map' returns a new array.  '.map' also sends it back into callbacks.
+
 2. What is the difference between a function and a method?
+
+* * * A function can be declared globally where as a method is a function that is bond to an object property.
 
 3. What is closure?
 
+* * * Because variables declared inside a function are closed off in it's own scope, the function has to expose or return a variable for it to be used outwardly.  However a closure occures when a function reaches outside it's scope to use a varible that is declared outside it. This can be a variable that is declared globally or a variable that is declared within the scope of a parent function which a inner function will gain access to.  With a closure you can call the function without passing an arguement to it and it will still reach outwardly to find a variable that is declared outside of the function.
+
 4. Describe the four rules of the 'this' keyword.
 
+* * * A. Window/Global Object Binding - When the 'this' keyword is used, and it is not pointing to a specific object that you or another developer created then the 'this' keyword will refer to the the Global Object which is the object that forms the window you are using.
+
+* * * B. Implicit Binding - When a specific object is created by you or another variable using the 'this' keyword, the 'this' keyword is referring to that object which is created.  When the object is called using the dot notation, the object name to the left of the dot is what 'this' refers to.
+
+* * * C. New Binding - When a constructor function is used to create objects, the 'this' keyword points to the very specific object that is created when using the 'new' keyword.  The object named after the 'new' keyword is the object that 'this' is referring to.
+
+* * * D. Explicit Binding - Also with constructor function used to create objects, but when using the .call or .apply methods to alter the object, the 'this' keyword refers specifically to the resulting altered object that was created after using the .call or .apply methods.
+
 5. Why do we need super() in an extended class?
+
+We use super() along with 'class' in place of 'Object.create(this, Class)' to make constructor syntax cleaner.  It makes the child constuctor aware of the parent constructor and when combined with the extends keyword to bind the child to the parent, super() will give the child access to the parent's attributes.
 
 ## Project Set up
 
