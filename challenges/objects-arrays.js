@@ -18,7 +18,7 @@ const tyranno = {
   weight: '7000kg',
   length: '12m',
   period: 'Late Cretaceous',
-  speak: function(){
+  roar: function(){
     return `The Tyrannosaurus says RAWERSRARARWERSARARARRRR!`
   },
 };
@@ -56,7 +56,7 @@ console.log('The Tyrannosaurus lived in the ' + tyranno.period + ' period.');
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(tyranno.speak());
+console.log(tyranno.roar());
 
 
 // ==== Arrays ====
@@ -77,8 +77,14 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array.  
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-console.log(universities)
+
+const universities = graduates.map((graduates) => {
+  return graduates.university;
+});
+console.log (universities.sort());
+
+// const universities = gradUniv.sort();
+// console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
