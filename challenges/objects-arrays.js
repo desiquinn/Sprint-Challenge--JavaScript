@@ -83,16 +83,15 @@ const universities = graduates.map((graduates) => {
 });
 console.log (universities.sort());
 
-// const universities = gradUniv.sort();
-// console.log(universities);
-
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
 The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [];
+const contactInfo = graduates.map((graduates) => {
+  return `${graduates.first_name} ${graduates.email}`;
+});
 console.log(contactInfo);
 
 
