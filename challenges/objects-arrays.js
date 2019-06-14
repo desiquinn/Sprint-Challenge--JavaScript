@@ -18,6 +18,9 @@ const tyranno = {
   weight: '7000kg',
   length: '12m',
   period: 'Late Cretaceous',
+  speak: function(){
+    return `The Tyrannosaurus says RAWERSRARARWERSARARARRRR!`
+  },
 };
 
 const stego = {
@@ -43,17 +46,17 @@ const veloci = {
 console.log('Tyrannosaurus weight: ', tyranno.weight);
 
 // What was the diet of a velociraptor?
-console.log(veloci.diet);
+console.log('Velociraptor diet: ', veloci.diet);
 
 // How long was a stegosaurus?
-console.log(stego.length);
+console.log('Stegosaurus length: ', stego.length);
 
 // What time period did tyrannosaurus live in?
-console.log(tyranno.period);
+console.log('The Tyrannosaurus lived in the ' + tyranno.period + ' period.');
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(tyranno.speak());
 
 
 // ==== Arrays ====
