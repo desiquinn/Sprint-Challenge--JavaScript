@@ -31,6 +31,7 @@ console.log(cuboid2.surfaceArea()); // 130
 class CubeMaker extends CuboidMaker2 {
     constructor(cubeattr) {
         super(cubeattr)
+
     };
 
     cubevolume() {
